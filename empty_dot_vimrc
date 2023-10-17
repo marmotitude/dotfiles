@@ -4,3 +4,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 """""
+
+" always display filename on the bottom, even for a single screen
+set laststatus=2
+
+" Swp files on a single dir
+set directory^=$HOME/.vim/tmp//
