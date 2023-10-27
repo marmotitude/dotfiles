@@ -10,3 +10,47 @@ set laststatus=2
 
 " Swp files on a single dir
 set directory^=$HOME/.vim/tmp//
+
+" persistent undo
+set undofile
+set undodir=~/.vim/undo
+
+" show tab complete options on statusbar
+set wildmenu
+
+" highlight search terms
+set hlsearch
+
+" incremental search
+set incsearch
+
+" case insensitive search unless the search has capital letters
+set ignorecase
+set smartcase
+
+" Use spacebar as leader
+let mapleader = "\<Space>"
+
+" leader + w to save
+nnoremap <Leader>w :w<CR>
+
+"""""
+" Tabs
+
+"Ctrl T to create a new tab
+nnoremap <C-t> :tabnew<Space>
+inoremap <C-t> <Esc>:tabnew<Space>
+
+" leader + number to go to tab number
+noremap <leader>1 1gt
+noremap <leader>2 2gt
+noremap <leader>3 3gt
+noremap <leader>4 4gt
+noremap <leader>5 5gt
+noremap <leader>6 6gt
+noremap <leader>7 7gt
+noremap <leader>8 8gt
+noremap <leader>9 9gt
+noremap <leader>0 :tablast<cr>
+"""""
+
